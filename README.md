@@ -39,5 +39,10 @@ The application will be hosted on port 3000.
 $ npm run test
 ```
 
+Note:
+For mac:
+replace "start" command in script with the following:
+"start": "webpack-dev-server --mode=development --hot --history-api-fallback --color --open"
+
 - Validate the test results and code coverage on the command prompt
 - Validate the html output of code coverage in ProjectPath/coverage/lcov-report/index.html# newyorktimesbugle

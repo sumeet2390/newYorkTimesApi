@@ -26,7 +26,7 @@
     "webpack": "^4.17.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode=development --hot --history-api-fallback --color --open",
+    "start": "SET NODE_ENV=LOCAL && SET APP_ENV=local && webpack-dev-server --mode=development --hot --history-api-fallback --color --open",
     "build": "",
     "test": "jest",
     "sass-compile": "npm run app-structure",
