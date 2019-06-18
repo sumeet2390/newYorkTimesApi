@@ -11,7 +11,7 @@ export const NewsList = props => (
     <h6 className="border-bottom border-gray pb-2 mb-0">
       Title - {props.newsItem.title}
     </h6>
-    <h6 className="border-bottom border-gray pb-2 mb-0 mb-2">
+    <h6 className="border-bottom border-gray pb-2 mb-0 mt-2">
       Description - {props.newsItem.abstract}
     </h6>
     <div className="media text-muted pt-3">

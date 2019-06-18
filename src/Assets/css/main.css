@@ -39,3 +39,5 @@ body > #root,
         border: 5px solid orange; }
     .app-layout .app-container .container .news-items-wrapper .news-container .detail-box {
       width: 50%; }
+      .app-layout .app-container .container .news-items-wrapper .news-container .detail-box span {
+        display: block; }
