@@ -82,13 +82,13 @@ describe("<SearchComponent />", () => {
     console.log(wrapper);
     expect(wrapper.find("SearchComponent")).toBeDefined();
   });
-  it("check if SearchComponent rendered", () => {
+  it("check if handleChange called", () => {
     const wrapper = shallow(<SearchComponent {...SearchProps} />);
     wrapper.setState = jest.fn();
     wrapper.instance().handleChange({ target: { value: "Eu" } });
     expect(wrapper.setState).toHaveBeenCalled();
   });
-  it("check if SearchComponent rendered", () => {
+  it("check if componentWillReceiveProps called", () => {
     const wrapper = shallow(<SearchComponent {...SearchProps} />);
     wrapper.setState = jest.fn();
     wrapper.setProps({ newsList: [] });

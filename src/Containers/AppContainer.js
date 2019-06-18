@@ -10,13 +10,7 @@ class AppContainer extends React.Component {
     super(props);
   }
 
-  handleChange(searchTerm) {
-    // NewsServiceInst.popularMostViewed();
-  }
-
   componentDidMount() {
-    debugger;
-    console.log("in comp did mount");
     NewsServiceInst.popularMostViewed();
   }
 
@@ -32,7 +26,6 @@ class AppContainer extends React.Component {
           ? toastr.success(this.props.success.title, this.props.success.message)
           : null}
         <SearchComponent
-          handleChange={this.handleChange}
           newsList={this.props.pdata}
           newsSelecteddata={this.props.newsSelecteddata}
         />

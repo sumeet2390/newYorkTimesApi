@@ -1,6 +1,6 @@
 import React from "react";
-import { debounce } from "lodash";
-import moment from "moment";
+// import { debounce } from "lodash";
+// import moment from "moment";
 import { NewsList } from "./NewsList";
 import { NewsSelected } from "./NewsSelected";
 
@@ -20,9 +20,6 @@ export default class SearchComponent extends React.Component {
       this.setState({ newsList: nextProps.newsList });
     }
   }
-  //   componentWillReceiveProps(nextProps) {
-  //     console.log(nextProps);
-  //   }
 
   handleChange(event) {
     const value = event.target.value;
@@ -33,12 +30,12 @@ export default class SearchComponent extends React.Component {
     } else {
       newsList = this.props.newsList;
     }
-    const debounceCall = debounce(() => {
-      this.props.handleChange(value);
-    }, 500);
+    // const debounceCall = debounce(() => {
+    //   this.props.handleChange(value);
+    // }, 500);
 
     this.setState({ newsList });
-    debounceCall();
+    // debounceCall();
   }
 
   renderNewsList() {
@@ -60,20 +57,7 @@ export default class SearchComponent extends React.Component {
     return newsItem;
   }
 
-  //   allPopularNews() {
-  //     return this.props.newsList.map((newsItem, index) => {
-  //       return (
-  //         <NewsList
-  //           key={index}
-  //           styleDetails={{ border: "1px solid black" }}
-  //           newsItem={newsItem}
-  //         />
-  //       );
-  //     });
-  //   }
-
   render() {
-    // const allPopularViewedNews = this.allPopularNews(this.props.newsList);
     return (
       <main role="main" className="container">
         <div className="d-flex align-items-center p-3 my-3 text-white-50 bg-black rounded box-shadow">
