@@ -1,0 +1,35 @@
+.app-layout {
+  .app-container {
+    .container {
+      .news-items-wrapper {
+        height: 500px;
+        .heading {
+          text-align: center;
+          background: $accentcolor;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          width: 100%;
+          font-family: $main-font-family;
+          font-size: 14px;
+        }
+        .news-container {
+          display: flex;
+          justify-content: space-between;
+
+          .left-side-panel {
+            overflow-y: auto;
+            height: 500px;
+            margin-bottom: 10px;
+            .highlight {
+              border: 5px solid orange;
+            }
+          }
+          .detail-box {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

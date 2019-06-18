@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%; }
+
+html,
+body {
+  overflow: hidden; }
+
+body > #root,
+.app-layout,
+.assignment-container {
+  padding: 0 !important; }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto-Regular.ttf?") format("ttf"); }
+
+.app-layout .app-container .container .news-items-wrapper {
+  height: 500px; }
+  .app-layout .app-container .container .news-items-wrapper .heading {
+    text-align: center;
+    background: #58a4b0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px; }
+  .app-layout .app-container .container .news-items-wrapper .news-container {
+    display: flex;
+    justify-content: space-between; }
+    .app-layout .app-container .container .news-items-wrapper .news-container .left-side-panel {
+      overflow-y: auto;
+      height: 500px;
+      margin-bottom: 10px; }
+      .app-layout .app-container .container .news-items-wrapper .news-container .left-side-panel .highlight {
+        border: 5px solid orange; }
+    .app-layout .app-container .container .news-items-wrapper .news-container .detail-box {
+      width: 50%; }

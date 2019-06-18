@@ -1,0 +1,5 @@
+{
+  "plugins": ["react-redux"],
+  "extends": ["plugin:react-redux/recommended"],
+  "parserOptions": { "sourceType": "module" }
+}
